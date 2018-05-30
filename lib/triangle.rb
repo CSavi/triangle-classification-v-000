@@ -25,9 +25,9 @@ class Triangle
     inequality_triangle = [(x + y > z), (y + z > x), (z + x > y)]
     sides = [x, y, z]
     sides.each do |side|
-    valid = false if sides.any? {|side| side <= 0} 
+      valid = false if sides.any? {|side| side <= 0} 
     end 
-    
+    raise TriangleError if valid == false 
   end   
   
   class TriangleError < StandardError 
