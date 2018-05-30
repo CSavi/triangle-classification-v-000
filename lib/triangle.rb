@@ -22,7 +22,7 @@ class Triangle
   
   def valid_triangle?(x, y, z)
     sides = [x, y, z]
-    if 
+    false if sides.any? {} 
     else 
     end   
   end   
