@@ -24,8 +24,9 @@ class Triangle
     valid = true 
     inequality_triangle = [(x + y > z), (y + z > x), (z + x > y)]
     valid = false if inequality_triangle.any? {|triangle| triangle != triangle } 
-    binding.pry
+    #binding.pry
     sides = [x, y, z]
+    binding.pry
     sides.each do |side|
       valid = false if sides.any? {|side| side <= 0} 
     end 
