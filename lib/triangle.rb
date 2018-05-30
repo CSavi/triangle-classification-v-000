@@ -25,7 +25,6 @@ class Triangle
     false if sides.any? {|side| side == 0} 
     else 
     end 
-    binding.pry
   end   
   
   class TriangleError < StandardError 
