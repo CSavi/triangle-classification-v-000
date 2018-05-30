@@ -10,6 +10,7 @@ class Triangle
   end   
   
   def kind 
+    binding.pry
     if (x == y && y == z) && (first_angle == second_angle && second_angle == third_angle)
       return equilateral
       binding.pry
