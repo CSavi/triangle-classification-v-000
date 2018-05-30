@@ -10,6 +10,7 @@ class Triangle
   end   
   
   def kind 
+    
     if x == y && y == z
       :equilateral
     elsif x == y && y > z
