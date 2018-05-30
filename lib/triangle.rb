@@ -24,13 +24,13 @@ class Triangle
     valid = true 
     inequality_triangle = [(x + y > z), (y + z > x), (z + x > y)]
    # valid = false if inequality_triangle.any? {|triangle| triangle != triangle  } 
-    #binding.pry
-    sides = [x, y, z]
-   # binding.pry
-    sides.each do |side|
-   #    inequality_triangle << false if sides.any? {|side| side <= 0} 
    
-    valid = false if sides.any? {|side| side <= 0} 
+    sides = [x, y, z]
+
+    sides.each do |side|
+       inequality_triangle << false if sides.any? {|side| side <= 0} 
+   
+   # valid = false if sides.any? {|side| side <= 0} 
     end 
     raise TriangleError if valid == false
   end   
