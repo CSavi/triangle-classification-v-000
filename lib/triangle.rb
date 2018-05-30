@@ -1,7 +1,7 @@
 require 'pry'
 class Triangle
   
-  attr_accessor :x, :y, :z
+  attr_reader :x, :y, :z
   
   def initialize(x, y, z)
     @x = x
@@ -11,11 +11,11 @@ class Triangle
   
   def kind 
     if x == y && y == z
-      equilateral
+      :equilateral
     elsif x == y && y > z
-      isosceles
+      :isosceles
     else
-      scalene 
+      :scalene 
     end   
       
   end   
