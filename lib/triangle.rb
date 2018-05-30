@@ -21,11 +21,13 @@ class Triangle
   end  
   
   def valid_triangle
+    valid = true 
     inequality_triangle = [(x + y > z), (y + z > x), (z + x > y)]
     sides = [x, y, z]
     sides.each do |side|
-      false if sides.any? {|side| side <= 0} 
+    valid = false if sides.any? {|side| side <= 0} 
     end 
+    
   end   
   
   class TriangleError < StandardError 
