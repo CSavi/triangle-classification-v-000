@@ -28,7 +28,7 @@ class Triangle
     sides = [x, y, z]
    # binding.pry
     sides.each do |side|
-      inequality_triangle << false if sides.any? {|side| side <= 0} 
+   #    inequality_triangle << false if sides.any? {|side| side <= 0} 
       #valid = false
     end 
     raise TriangleError if inequality_triangle.include?(false) 
