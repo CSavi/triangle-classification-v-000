@@ -23,7 +23,7 @@ class Triangle
   def valid_triangle
     valid = true 
     inequality_triangle = [(x + y > z), (y + z > x), (z + x > y)]
-    valid = false if inequality_triangle.any? {|triangle| triangle != triangle } 
+    valid = false if inequality_triangle.any? {|triangle| != triangle  } 
     #binding.pry
     sides = [x, y, z]
     binding.pry
