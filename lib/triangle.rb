@@ -14,7 +14,7 @@ class Triangle
       return equilateral
     elsif (x == y && y > z) && (first_angle == second_angle && second_angle > third_angle)
       return isosceles
-    elsif
+    else
       return scalene 
     end   
       
