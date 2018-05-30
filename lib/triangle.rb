@@ -22,7 +22,7 @@ class Triangle
   
   def valid_triangle
     inequality_triangle = [(x + y > z), (y + z > x), (z + x > y)]
-    (x, y, z).each do |side|
+    [x, y, z].each do |side|
       
     false if sides.any? {|side| side <= 0} 
     end 
