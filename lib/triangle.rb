@@ -3,7 +3,7 @@ class Triangle
   
   attr_accessor :x, :y, :z, :first_angle, :second_angle, :third_angle
   
-  def initialize(equilateral, isosceles, scalene)
+  def initialize(x, y, z)
     @equilateral = equilateral
     @isosceles = isosceles
     @scalene = scalene
