@@ -12,10 +12,10 @@ class Triangle
   def kind 
     if x == y && y == z
       equilateral
-    elsif (x == y && y > z) && (first_angle == second_angle && second_angle > third_angle)
-      return isosceles
+    elsif x == y && y > z
+      isosceles
     else
-      return scalene 
+      scalene 
     end   
       
   end   
