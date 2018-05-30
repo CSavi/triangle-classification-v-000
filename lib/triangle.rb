@@ -9,7 +9,14 @@ class Triangle
   end   
   
   def kind 
-    
+    if 
+      return equilateral
+    elsif 
+      return isosceles
+    elsif
+      return scalene 
+    end   
+      
   end   
   
   class TriangleError < StandardError 
