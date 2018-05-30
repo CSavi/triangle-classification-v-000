@@ -26,13 +26,14 @@ class Triangle
    # valid = false if inequality_triangle.any? {|triangle| triangle != triangle  } 
    
     sides = [x, y, z]
-
     sides.each do |side|
        inequality_triangle << false if sides.any? {|side| side <= 0} 
    
    # valid = false if sides.any? {|side| side <= 0} 
     end 
-    raise TriangleError if valid == false
+    raise TriangleError if inequality_triangle.include?(false)
+   # original 
+   # raise TriangleError if valid == false
   end   
   
   class TriangleError < StandardError 
