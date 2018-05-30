@@ -12,7 +12,7 @@ class Triangle
   def kind 
     if (x == y && y == z) && (first_angle == second_angle && second_angle == third_angle)
       return equilateral
-    elsif 
+    elsif (x == y && y > z) && (first_angle == second_angle && second_angle > third_angle)
       return isosceles
     elsif
       return scalene 
