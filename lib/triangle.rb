@@ -1,7 +1,7 @@
 require 'pry'
 class Triangle
   
-  attr_accessor :equilateral, :isosceles, :scalene, :x, :y, :z, :first_angle, :second_angle, :third_angle
+  attr_accessor :x, :y, :z, :first_angle, :second_angle, :third_angle
   
   def initialize(equilateral, isosceles, scalene)
     @equilateral = equilateral
