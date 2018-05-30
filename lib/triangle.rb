@@ -10,7 +10,7 @@ class Triangle
   end   
   
   def kind 
-    if (x == y && y == z) && (first_angle == second_angle && second_angle == third_angle)
+    if x == y && y == z) && (first_angle == second_angle && second_angle == third_angle)
       return equilateral
     elsif (x == y && y > z) && (first_angle == second_angle && second_angle > third_angle)
       return isosceles
