@@ -1,6 +1,6 @@
 class Triangle
   
-  attr_accessor :equilateral, :isosceles, :scalene, :x, :y, :z
+  attr_accessor :equilateral, :isosceles, :scalene, :x, :y, :z, :first_angle, :second_angle, :third_angle
   
   def initialize(equilateral, isosceles, scalene)
     @equilateral = equilateral
@@ -9,7 +9,7 @@ class Triangle
   end   
   
   def kind 
-    if 
+    if (x == y && y == z) && (first_angle == second_angle && second_angle == third_angle)
       return equilateral
     elsif 
       return isosceles
