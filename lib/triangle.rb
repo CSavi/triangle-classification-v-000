@@ -20,7 +20,7 @@ class Triangle
     end   
   end  
   
-  def valid_triangle
+  def valid_triangle?(x, y, z)
     if 
     else 
     end   
