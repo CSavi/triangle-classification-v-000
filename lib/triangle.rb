@@ -21,6 +21,7 @@ class Triangle
   end  
   
   def valid_triangle?(x, y, z)
+    sides = [x, y, z]
     if 
     else 
     end   
