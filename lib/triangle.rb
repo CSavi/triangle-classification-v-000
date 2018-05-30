@@ -23,6 +23,7 @@ class Triangle
   def valid_triangle?(x, y, z)
     sides = [x, y, z]
     false if sides.any? {|side| side == 0} 
+    binding.pry 
     else 
     end   
   end   
